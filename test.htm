@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>SIGN IN</h2>
+        <form action="/submit_login" method="post">
+        <img src="ảnh/laptop.jpg">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                        <a href="#" style="float: right;">Forgot password?</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Login</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
